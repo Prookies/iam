@@ -85,18 +85,18 @@ output:
 
 # all available settings of specific linters
 linters-settings:
-  bidichk:
-    # The following configurations check for all mentioned invisible unicode
-    # runes. It can be omitted because all runes are enabled by default.
-    left-to-right-embedding: true
-    right-to-left-embedding: true
-    pop-directional-formatting: true
-    left-to-right-override: true
-    right-to-left-override: true
-    left-to-right-isolate: true
-    right-to-left-isolate: true
-    first-strong-isolate: true
-    pop-directional-isolate: true
+  # bidichk:
+  #   # The following configurations check for all mentioned invisible unicode
+  #   # runes. It can be omitted because all runes are enabled by default.
+  #   left-to-right-embedding: true
+  #   right-to-left-embedding: true
+  #   pop-directional-formatting: true
+  #   left-to-right-override: true
+  #   right-to-left-override: true
+  #   left-to-right-isolate: true
+  #   right-to-left-isolate: true
+  #   first-strong-isolate: true
+  #   pop-directional-isolate: true
 
   cyclop:
     # the maximal code complexity to report
@@ -332,9 +332,9 @@ linters-settings:
     # put imports beginning with prefix after 3rd-party packages;
     # it's a comma-separated list of prefixes
     local-prefixes: github.com/marmotedu/iam
-  golint:
-    # minimal confidence for issues, default is 0.8
-    min-confidence: 0.9
+  # golint:
+  #   # minimal confidence for issues, default is 0.8
+  #   min-confidence: 0.9
   gomnd:
     settings:
       mnd:
@@ -808,7 +808,7 @@ linters:
     - varcheck
     - wastedassign
     - whitespace
-    - bidichk
+    # - bidichk
       #- nilnil
       #- tenv
       #- varnamelen
@@ -817,7 +817,7 @@ linters:
       #- tagliatelle
     - gomoddirectives
     - wastedassign
-    - golint
+    # - golint
       #- ForceTypeAssert
       #- nilassign
   fast: false
